@@ -13,7 +13,7 @@ import (
 	"time"
 )
 
-// Assets statically implements the virtual filesystem given to vfsgen as input.
+// Assets provides Octicons data.
 var Assets = func() http.FileSystem {
 	mustUnmarshalTextTime := func(text string) time.Time {
 		var t time.Time
@@ -27,7 +27,7 @@ var Assets = func() http.FileSystem {
 	fs := _vfsgen_fs{
 		"/": &_vfsgen_dirInfo{
 			name:    "/",
-			modTime: mustUnmarshalTextTime("2016-02-12T05:04:39Z"),
+			modTime: mustUnmarshalTextTime("2016-02-12T05:21:45Z"),
 		},
 		"/LICENSE.txt": &_vfsgen_compressedFileInfo{
 			name:              "LICENSE.txt",
