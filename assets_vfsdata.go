@@ -13,7 +13,7 @@ import (
 	"time"
 )
 
-// Assets provides Octicons data.
+// Assets provides GitHub Octicons data.
 var Assets = func() http.FileSystem {
 	mustUnmarshalTextTime := func(text string) time.Time {
 		var t time.Time
