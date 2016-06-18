@@ -3,8 +3,7 @@
 // It's a Go package that statically embeds Octicons data, making it available via an http.FileSystem.
 package octicons
 
-//go:generate curl -L -O https://github.com/github/octicons/releases/download/v3.5.0/octicons.zip
-//go:generate unzip octicons.zip -d octicons
-//go:generate rm -f octicons.zip octicons/README.md octicons/octicons-local.ttf octicons/sprockets-octicons.scss
-//go:generate goexec -quiet "err := vfsgen.Generate(http.Dir(\"octicons\"), vfsgen.Options{PackageName: \"octicons\", VariableName: \"Assets\", VariableComment: \"Assets provides Octicons data.\"}); if err != nil { log.Fatalln(err) }"
-//go:generate rm -rf octicons
+//go:generate curl -L -o octicons.zip https://github.com/primer/octicons/archive/v4.2.0.zip
+//go:generate unzip octicons.zip octicons-4.2.0/build/font/* -d octicons
+//go:generate goexec -quiet "err := vfsgen.Generate(http.Dir(\"octicons/octicons-4.2.0/build/font\"), vfsgen.Options{PackageName: \"octicons\", VariableName: \"Assets\", VariableComment: \"Assets provides Octicons data.\"}); if err != nil { log.Fatalln(err) }"
+//go:generate rm -rf octicons.zip octicons
