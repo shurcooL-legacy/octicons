@@ -1,4 +1,7 @@
-# octicons [![Build Status](https://travis-ci.org/shurcooL/octicons.svg?branch=master)](https://travis-ci.org/shurcooL/octicons) [![GoDoc](https://godoc.org/github.com/shurcooL/octicons?status.svg)](https://godoc.org/github.com/shurcooL/octicons)
+octicons
+========
+
+[![Build Status](https://travis-ci.org/shurcooL/octicons.svg?branch=master)](https://travis-ci.org/shurcooL/octicons) [![GoDoc](https://godoc.org/github.com/shurcooL/octicons?status.svg)](https://godoc.org/github.com/shurcooL/octicons)
 
 Package octicons provides GitHub Octicons.
 
@@ -14,4 +17,4 @@ go get -u github.com/shurcooL/octicons
 License
 -------
 
--	[MIT License](http://opensource.org/licenses/mit-license.php)
+-	[MIT License](https://opensource.org/licenses/mit-license.php)
